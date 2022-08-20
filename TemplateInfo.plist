@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.raylib.app</string>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template creates a raylib project. </string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Default</key>
+			<string>C</string>
+			<key>Values</key>
+			<array>
+				<string>C</string>
+			</array>
+			<key>Variables</key>
+			<dict/>
+			<key>Units</key>
+			<dict/>
+		</dict>
+	</array>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.commandLineTool</string>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>raylib.entitlements</string>
+		<string>main.c</string>
+		<string>libraylib.a</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>libraylib.a</key>
+		<dict>
+			<key>PathType</key>
+			<string>Absolute</string>
+			<key>Path</key>
+			<string>/usr/local/Cellar/raylib/4.0.0/lib/libraylib.a</string>
+		</dict>
+		<key>main.c</key>
+		<dict>
+			<key>Path</key>
+			<string>main.c</string>
+		</dict>
+		<key>raylib.entitlements</key>
+		<dict>
+			<key>Path</key>
+			<string>raylib.entitlements</string>
+		</dict>
+	</dict>
+	<key>Project</key>
+	<dict>
+		<key>SharedSettings</key>
+		<dict>
+			<key>LIBRARY_SEARCH_PATHS</key>
+			<string>$(inherited) /usr/local/Cellar/raylib/4.0.0/lib</string>
+			<key>HEADER_SEARCH_PATHS</key>
+			<string>/usr/local/Cellar/raylib/4.0.0/**</string>
+			<key>CODE_SIGN_ENTITLEMENTS</key>
+			<string>___PACKAGENAME___/raylib.entitlements</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
