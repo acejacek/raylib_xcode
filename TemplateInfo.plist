@@ -44,7 +44,7 @@
 			<key>PathType</key>
 			<string>Absolute</string>
 			<key>Path</key>
-			<string>/usr/local/Cellar/raylib/4.0.0/lib/libraylib.a</string>
+			<string>/usr/local/Cellar/raylib/4.2.0/lib/libraylib.a</string>
 		</dict>
 		<key>main.c</key>
 		<dict>
@@ -62,9 +62,9 @@
 		<key>SharedSettings</key>
 		<dict>
 			<key>LIBRARY_SEARCH_PATHS</key>
-			<string>$(inherited) /usr/local/Cellar/raylib/4.0.0/lib</string>
+			<string>$(inherited) /usr/local/Cellar/raylib/4.2.0/lib</string>
 			<key>HEADER_SEARCH_PATHS</key>
-			<string>/usr/local/Cellar/raylib/4.0.0/**</string>
+			<string>/usr/local/Cellar/raylib/4.2.0/**</string>
 			<key>CODE_SIGN_ENTITLEMENTS</key>
 			<string>___PACKAGENAME___/raylib.entitlements</string>
 		</dict>
