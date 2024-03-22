@@ -22,7 +22,8 @@ brew install raylib
 
 ## Instalation of Xcode project template
 
-The easiesst method to install the template is, in this directory, run:
+### Manual installation
+Create folder, preferably in user's local library:
 
 ```
 chmod +x install.sh
@@ -31,9 +32,13 @@ chmod +x install.sh
 
 From now on, when creating new project, it's possible to select raylib (in macOS platform, scroll down to see it at the bottom of the list). Such created new project will have a link to `libraylib.a` and pre-set search paths to headers and library files. Additionally, it will disable library validations, preventing linking the unsigned raylib.
 
-As mentioned in [Working on macOS](https://github.com/raysan5/raylib/wiki/Working-on-macOS), you may need to add additional frameworks to your project:
+### Scripted installation
 
-- OpenGL.framework
-- CoreVideo.framework
-- IOKit.framework
-- Cocoa.framework
+Too lazy to manually install the template? Copy and paste these lines into your terminal and let your computer take care of everything!
+```
+mkdir -p ~/Library/Developer/Xcode/Templates/Project\ Templates/Raylib/Raylib.xctemplate/
+cd ~/Library/Developer/Xcode/Templates/Project\ Templates/Raylib/Raylib.xctemplate/
+wget https://github.com/acejacek/raylib_xcode/archive/main.zip
+unzip -j raylib_xcode-main.zip
+rm https://github.com/acejacek/raylib_xcode/archive/main.zip
+```
