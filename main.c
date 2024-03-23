@@ -1,26 +1,24 @@
 #include "raylib.h"
 
-int main(void)
-{
-    const int screenWidth = 800;
-    const int screenHeight = 450;
+int main(void) {
+  const int screenWidth = 800;
+  const int screenHeight = 450;
 
-    InitWindow(screenWidth, screenHeight, "raylib window");
+  InitWindow(screenWidth, screenHeight, "Hello Xcode");
 
-    SetTargetFPS(60);
-    
-    while (!WindowShouldClose())
-    {
-        BeginDrawing();
+  SetTargetFPS(60);
 
-        ClearBackground(RAYWHITE);
+  while (!WindowShouldClose()) {
+    BeginDrawing();
 
-        DrawText("Hello, World!", 190, 200, 20, LIGHTGRAY);
+    ClearBackground(RAYWHITE);
 
-        EndDrawing();
-    }
+    DrawText("Hello, Xcode!", 335, 200, 20, BLUE);
 
-    CloseWindow();
+    EndDrawing();
+  }
 
-    return 0;
+  CloseWindow();
+
+  return 0;
 }
